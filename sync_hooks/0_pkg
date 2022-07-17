@@ -15,3 +15,4 @@ for pkg in `cat "$DIR/../packages" | sed -e '/^[ \t]*#/d' | sed '/^$/d'` ; do
 done
 
 pip list 2> /dev/null | grep tasklib &> /dev/null || pip install tasklib
+pip list 2> /dev/null | grep pynvim &> /dev/null || pip install pynvim 
