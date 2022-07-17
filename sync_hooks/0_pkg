@@ -13,3 +13,5 @@ for pkg in `cat "$DIR/../packages" | sed -e '/^[ \t]*#/d' | sed '/^$/d'` ; do
   sudo -v
   uur native "$pkg" "Installing"
 done
+
+pip list | grep tasklib &> /dev/null || pip install tasklib

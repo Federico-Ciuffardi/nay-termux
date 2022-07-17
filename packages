@@ -1,7 +1,7 @@
 main/tpm
 main/bin
-task
-tasklib
+taskwarrior
+# main/taskwarrior-tui
 zsh
 termux-tools
 wget
